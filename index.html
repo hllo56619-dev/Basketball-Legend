@@ -28,7 +28,7 @@
     <script type="text/javascript" src="assets/lib/phaser-cachebuster.min.js"></script>
     <script type="text/javascript" src="assets/lib/phaser-super-storage.min.js"></script>
     <script type="text/javascript" src="assets/lib/dragonBones.min.js"></script> 
-   <div id="timeMenu"
+  <div id="timeMenu"
 style="
 display:none;
 position:fixed;
@@ -45,22 +45,43 @@ font-size:18px;
 box-shadow:0 0 10px rgba(0,0,0,.5);">
 
     <div style="display:flex;align-items:center;gap:10px;">
-    ⏱ Time:
-    
-    <input
-        id="matchTime"
-        type="range"
-        min="5"
-        max="180"
-        value="60"
-        step="5"
-        oninput="timeValue.innerText=this.value + 's'"
-    >
+        ⏱ Time:
 
-    <span id="timeValue">60s</span>
-</div>
+        <input
+            id="matchTime"
+            type="range"
+            min="5"
+            max="180"
+            value="60"
+            step="5"
+            oninput="timeValue.innerText=this.value + 's'"
+        >
+
+        <span id="timeValue">60s</span>
+    </div>
+
+    <div style="margin-top:10px;">
+        🌍 Gravity:
+
+        <select id="gravityMode">
+            <option value="450">🌏Normal</option>
+            <option value="300">🌖Moon</option>
+        </select>
+    </div>
+    <div style="margin-top:10px;">
+👤 Player Size:
+
+<select id="playerSize">
+    <option value="0.5">Small</option>
+    <option value="0.73" selected>Normal</option>
+    <option value="1.2">Big</option>
+    <option value="chaos">Chaos</option>
+</select>
 </div>
 
+<div style="margin-top:10px;">
+
+</div>
 <script type="text/javascript" src="basketball_legends_2019.min.js?93fa17140190de6bc063"></script></body>
 
 </html>
